@@ -49,15 +49,24 @@ You have n number of locked boxes in front of you. Each box is numbered sequenti
 
 Write a method that determines if all the boxes can be opened.
 ```
-bob@dylan:~$ cat 0-main.js
-import getListStudents from "./0-get_list_students.js";
-console.log(getListStudents());
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 0-main.js 
-[
-  { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-  { id: 2, firstName: 'James', location: 'Columbia' },
-  { id: 5, firstName: 'Serena', location: 'San Francisco' }
-]
-bob@dylan:~$
+carrie@ubuntu:~/0x01-lockboxes$ cat main_0.py
+#!/usr/bin/python3
+
+canUnlockAll = __import__('0-lockboxes').canUnlockAll
+
+boxes = [[1], [2], [3], [4], []]
+print(canUnlockAll(boxes))
+
+boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
+print(canUnlockAll(boxes))
+
+boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
+print(canUnlockAll(boxes))
+
+carrie@ubuntu:~/0x01-lockboxes$
+carrie@ubuntu:~/0x01-lockboxes$ ./main_0.py
+True
+True
+False
+carrie@ubuntu:~/0x01-lockboxes$
 ```
