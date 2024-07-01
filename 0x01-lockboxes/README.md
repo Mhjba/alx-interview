@@ -48,8 +48,7 @@ mandatory
 You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
 
 Write a method that determines if all the boxes can be opened.
-...
-
+```
 bob@dylan:~$ cat 0-main.js
 import getListStudents from "./0-get_list_students.js";
 console.log(getListStudents());
@@ -61,3 +60,4 @@ bob@dylan:~$ npm run dev 0-main.js
   { id: 5, firstName: 'Serena', location: 'San Francisco' }
 ]
 bob@dylan:~$
+```
