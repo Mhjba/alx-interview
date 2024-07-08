@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-'''Minimum Operations python3 challenge'''
+"""Minimum Operations python3 challenge"""
 
 
-def minOperations(n: int) -> int:
-    if n <= 1:
-        return 0
+def minOperations(n):
+    """Calculates the fewest number of operations"""
 
     operations = 0
-    divisor = 2
+    counter = 2
 
     while n > 1:
-        while n % divisor == 0:
-            operations += divisor
-            n //= divisor
-        divisor += 1
+        while n % counter == 0:
+            operations += counter
+            n /= counter
+        counter += 1
 
     return operations
