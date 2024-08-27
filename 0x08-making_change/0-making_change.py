@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Making Change """
 
+
 def makeChange(coins, total):
     """
     Given a pile of coins of different values,
@@ -17,4 +18,4 @@ def makeChange(coins, total):
         for tmp in range(coin, total+1):
             count[tmp] = min(count[tmp], count[tmp-coin] + 1)
 
-    return count[total] if count[total] != total+1 else -1
+    return count[total] if count[total] != total+1 else -2
