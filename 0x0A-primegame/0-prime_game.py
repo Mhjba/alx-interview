@@ -10,6 +10,7 @@ def rm_multiples(ls, x):
         except (ValueError, IndexError):
             break
 
+
 def isWinner(x, nums):
     """ Determines the winner of the prime game """
     if x <= 0 or nums is None:
