@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define isWineer function, a solution to the Prime Game problem"""
+"""Define isWineer function"""
 
 
 def rm_multiples(ls, x):
